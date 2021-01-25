@@ -1,0 +1,11 @@
+const data = ['hola', 2, 5, 'adios'];
+var comparacion1 = data[1] > data[2];
+console.log(comparacion1);
+comparacion1 === true;
+comparacion1 === false;
+console.log("El segundo número es mayor");
+console.log(data[1] + data[2]);
+console.log(data[1] - data[2]);
+console.log(data[1] * data[2]);
+console.log(data[1] / data[2]);
+console.log(data[1] % data[2]);
