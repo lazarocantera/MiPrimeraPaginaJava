@@ -16,16 +16,3 @@ console.log(sonPremium.username);
 
 const noPremium = users.filter(user => user.premium === false);
 console.log(noPremium);
-
-
-/*const edad = users.filter(user => user.age > 25);
-console.log(edad);
-*/
-
-/*
-users.map(user => {
-  if (user.premium) {
-    console.log(`${user.username} tiene cuenta premium`)
-  }
-});
-*/
