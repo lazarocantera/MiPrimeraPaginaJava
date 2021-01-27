@@ -1,7 +1,12 @@
+class Food{
+    constructor(nombre, tipo, cal) {
+        this.nombre = nombre;
+        this.tipo = tipo;
+        this.cal = cal;
+    }
+};
 
-const numbers = [2, 50, 32];
-const biggerNumbers = numbers.map(function(number) {
-    return number*2;
-    
-});
-console.log(biggerNumbers);
+const donut = new Food("donut", "dulce", 452);
+const cerveza = new Food("cerveza", "bebida", 43);
+const manzana = new Food("manzana", "fruta", 52);
+console.log(Food);
