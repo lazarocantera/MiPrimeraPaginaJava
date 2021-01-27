@@ -6,13 +6,31 @@ const users = [
     {username: 'sergio58', age: 26, premium: true}
 ];
 console.log(users);
-//var premium = users.filter(user => user.premium = 'true');
-//console.log(premium);
 
-console.log(users.map(user => user.premium === true));
+
+
+
+//console.log(users.map(user => user.premium === true));
+
 const sonPremium = users.filter(user => user.premium === true);
-console.log(sonPremium);
-console.log(sonPremium.username);
+for (var i= 0; i < sonPremium.length; i++){
+    console.log(sonPremium[i].username + ' tiene premium');
+};
+
+//console.log(sonPremium);
+//console.log(`${sonPremium.username} es premium`);
+//const sonArray = sonPremium;
+//console.log(sonArray.username);
 
 const noPremium = users.filter(user => user.premium === false);
 console.log(noPremium);
+
+/*
+
+users.map(user => {
+    if (user.premium) {
+      console.log(`${user.username} tiene cuenta premium`);
+     
+    }
+  });
+  */
