@@ -18,11 +18,3 @@ for (var i= 0; i < sonPremium.length; i++){
 const noPremium = users.filter(user => user.premium === false);
 console.log(noPremium);
 
-/*
-users.map(user => {
-    if (user.premium) {
-      console.log(`${user.username} tiene cuenta premium`);
-     
-    }
-  });
-  */

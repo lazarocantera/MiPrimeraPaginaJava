@@ -21,5 +21,5 @@ var mejorTiempo = scores.reduce((acumulador1, actual) => {
         return actual;
     }
 }, {});
-console.log(mejorTiempo);
+console.log(mejorTiempo.name + "   " + mejorTiempo.time);
 
