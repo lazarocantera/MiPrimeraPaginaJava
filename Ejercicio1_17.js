@@ -36,12 +36,12 @@ class Factura {
                 this.informacion.baseImponible += this.elementos[i].cantidad * this.elementos[i].precio;
             };
         this.informacion.total = this.informacion.baseImponible * (1+(this.informacion.iva/100));
-        console.log(informacion.total);
+        console.log(this.informacion.total);
         };
         this.FacturaTotal = function () {
             this.creaFactura();
-            alert("total: " + this.informacion.total);
-            console.log("total: " + this.informacion.total);
+            alert(this.cliente.nombre + " tiene una factura de total: " + this.informacion.total+ " €");
+            console.log(this.cliente.nombre + " tiene una factura de total: " + this.informacion.total+ " €");
         };
             
         };
@@ -51,6 +51,6 @@ class Factura {
 var cliente1 = new Cliente("Jacinto", "calle ferrocarriles", "666666", "111A");
 var elementos = [new Elemento("tfno fijo", "1", "10"), new Elemento("tfno móvil", "2", "18")];
 var facturaPersona = new Factura(cliente1, elementos);
-facturaPersona.FacturaTotal;
+facturaPersona.FacturaTotal();
 //console.log("total: " + this.informacion.total);
 
