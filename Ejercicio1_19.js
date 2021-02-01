@@ -6,7 +6,7 @@ function saveData() {
 };
 
 // Al quitar el foco del input cambia de color
-const inputName = document.querySelector(".name");
+const inputName = document.querySelector(".nombre");
 
 inputName.addEventListener('focus', changeColorFocus);
 function changeColorFocus() {
