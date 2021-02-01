@@ -19,7 +19,7 @@ const element4 = document.querySelectorAll('.label-input');
 const element5 = document.querySelectorAll('#louie');
 const element6 = document.querySelector('.label-input');
 */
-document.getElementById("miBoton").addEventListener("click", displaydate);
+document.getElementById("miBoton").addEventListener("click", displayDate);
 function displayDate () {
     document.getElementById("demo").innerHTML = Date();
 }
